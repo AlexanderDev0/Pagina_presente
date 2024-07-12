@@ -22,18 +22,21 @@ body {
 
 .cabecalho{
     background-color: var(--cor-secundaria);
-    padding: 2% 0% 2% 15%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .cabecalho__menu {
     display: flex;
-    gap: 40px;
+    gap: 30px;
 }
 
 .cabecalho__menu__link {
     text-decoration: none;
     color: var(--cor-primaria);
     font-size: var(--tamanho-fonte-texto);
+    font-family: var(--fonte-texto);
 }
 
 .principal{
@@ -102,7 +105,7 @@ body {
     font-size: var(--tamanho-fonte-texto);
 }
 
-@media (max-width: 1200px){
+@media (max-width: 900px){
     .cabecalho{
         display: flex;
         justify-content: center;
@@ -134,3 +137,4 @@ body {
         height: 100%;
     }
 }
+
