@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 *{
-    margin: 0;
+    margin: 0%;
     padding: 0%;
 }
 :root {
@@ -107,17 +107,23 @@ body {
 }
 
 @media (max-width: 1000px){
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
     .cabecalho{
         display: flex;
         justify-content: center;
+        
 
     }
     .principal{
-        box-sizing: border-box;
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .principal__carta__texto{
+       width: 20rem;
     }
 
     .principal__apresentacao{
@@ -129,21 +135,13 @@ body {
     .apresentacao__imagem{
         width: 20rem;
     }
-
-    .principal__carta__titulo{
-        padding: 7rem;
-        width: 30vh;
-    }
-    
-
-    .principal__album{
+    .principal__album {
         display: flex;
         flex-direction: column;
-        gap: 10rem;
+        gap: 30px;
+        align-items: center;
     }
-
-    .principal__fotos__foto {
-        width: 25rem;
-        
+    .principal__fotos__foto{
+        width: 20rem;
     }
 }
